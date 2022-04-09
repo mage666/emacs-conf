@@ -162,4 +162,12 @@ by Prelude.")
  ;; greet the use with some useful tip
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
+ ;; Load theme
+ (load-theme 'ample t t)
+ (enable-theme 'ample)
+
+ ;; Start fullscreen
+ (custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;;; init.el ends here
